@@ -137,4 +137,7 @@ hr{
     .mid_contain .contain-box{
         margin-bottom: 5rem;
     }
+    .container .left i{
+        display: none;
+    }
 }
