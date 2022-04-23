@@ -100,7 +100,7 @@ nav{
     background-size: cover;
     background-position: center;
     position: relative;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://suhasledange.github.io/PasswordManager.github.io/back.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/web/project/password/img/back.jpg);
     
 }
 
@@ -281,7 +281,9 @@ h3{
 }
 .left-prot img{
     width: 570px;
-    border-radius: 8px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+
 }
 .right-prot{
     display: inline-block;
@@ -301,13 +303,77 @@ h3{
     font-size: 15px;
 }
 
+
+/* ------------cross-plat-----------0 */
+
+.cross-plat{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 0px 100px;
+}
+.cross-head h1{
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.cross-head h3{
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.cross-plat-contain{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px 50px;
+    gap: 2rem;
+}
+.element{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.element:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.cross-plat-contain .element img{
+    width: 25%;
+    padding-bottom: 20px;
+}
+.cross-plat-contain .element a{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(70, 70, 255);
+    transition: 0.4s;
+}
+.cross-plat-contain .element a:hover{
+    text-decoration: underline;
+    color: rgb(15, 15, 255);
+}
+.cross-plat-contain .element p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cross-plat-contain .element{
+    padding: 10px 15px;
+}
+/* ----------------footer------------- */
+
+
 .footer{
     margin-top: 150px;
     width: 100%;
-    padding: 100px 15%;
+    padding: 80px 15%;
     background: #333;
     color: #efefef;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10rem;
 }
 .footer .col-3 .social-icon i{
     transition: 0.3s;
@@ -333,6 +399,7 @@ h3{
 }
 .col-2{
     flex-grow: 2;
+    justify-content: center;
 }
 .footer div h3{
     font-weight: 300;
@@ -343,10 +410,10 @@ h3{
     display: block;
     text-decoration: none;
     color: #efefef;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 form input{
-    width: 400px;
+    width: 390px;
     height: 45px;
     border-radius: 4px;
     text-align: center;
@@ -572,7 +639,7 @@ form button{
 }
 @media screen and (max-width:600px) {
     .flex-div{
-        margin: -10px 0px;
+        margin: -6px 0px;
         max-width: 100%;        
     }
     .contain{
@@ -594,11 +661,9 @@ form button{
             display: none;
         }
         .nav-right .log{
-            width: 80%;
             font-size: 14px;
             border: 1px solid rgb(188, 188, 188);
-           margin: auto 10px;
-            padding: 2px 10px;
+            padding: 3px 13px;
             border-radius: 10px;
             background: red;
             color: white;
@@ -614,8 +679,20 @@ form button{
             display: none;
         }
         .mid-contain{
-            display: inline-block;
-            margin-left: 10px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin: 0;
+            justify-content: center;
+            margin-left: 50px;
+        }
+        .block{
+            padding: 0;
+            margin: 0;
+        }
+       .mid-contain .block img{
+        padding-top: 40px;
+        width: 450px;
+        display: none;
         }
         .contain .text-box h1{
             font-size: 30px;
@@ -641,6 +718,12 @@ form button{
         .mid-contain .block .min-photo{
                 margin-left: -30px;
         }
+        .protect{
+            margin-left: 30px;
+            padding: 0;
+            justify-content: center;
+
+        }
         .protect .protect-contain{
             display: inline-block;
         }
@@ -655,8 +738,13 @@ form button{
         }
         .footer{
             display: grid;
-            grid-template-rows: repeat(1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .footer .col-1{
+            margin-bottom: -90px;
+        }
+        .footer .col-2{
+            margin-bottom: -60px;
         }
         .footer .col-2 h3{
             margin-bottom: 10px;
@@ -665,6 +753,7 @@ form button{
             margin-bottom: 10px;
         }
        .log-content{
+           width: 100%;
            margin-top: -50px;
            display: inline-block;
        }
@@ -688,10 +777,10 @@ form button{
         }
         .log-right form button{
             padding: 5px 0px;
+            width: 100%;
         }
         .log-right button{
             border-radius: 10px;
-            width: 100%;
             font-size: 13px;
         }
         .log-right .forget{
@@ -701,5 +790,26 @@ form button{
             font-size: 13px;
             padding: 7px 15px;
         }
-
+        .cross-plat{
+            display: flex;
+            flex-direction: column;
+        }
+        .cross-plat-contain{
+            grid-template-columns: repeat(1,1fr);
+            padding: 0;
+            margin: 0;
+        }
+        .cross-plat-contain .element{
+            padding: 35px 35px;
+            margin: -25px -25px;
+        }
+        .signup{
+            width: 100%;
+        }
+        .sign-contain{
+            width: 90%;
+        }
+        .sign-form .txt-form input{
+            width: 90%;
+        }
 }
