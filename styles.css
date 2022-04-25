@@ -100,7 +100,7 @@ nav{
     background-size: cover;
     background-position: center;
     position: relative;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/web/project/password/img/back.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://suhasledange.github.io/PasswordManager.github.io/back.jpg);
     
 }
 
