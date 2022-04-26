@@ -15,7 +15,7 @@ nav{
 }
 .container{
     display: flex;
-    padding: 1.2rem;
+    padding: 0.9rem;
     width: 100%;
     border: 1px solid white;
     background:white;
@@ -52,7 +52,7 @@ span{
     align-items: center;
     position: absolute;
     top: 25%;
-    left: 12%;
+    left: 15%;
     gap: 15rem;
 }
 .contain-box{
